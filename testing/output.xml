@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200420 13:10:23.516" generator="Robot 3.1.2 (Python 2.7.17 on win32)">
+<suite source="F:\mern-stack-authentication-master\testing\ForgotPassword_TestCase.robot" id="s1" name="ForgotPassword TestCase">
+<test id="s1-t1" name="Login TestCases">
+<kw name="Open Link">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200420 13:10:23.902" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" endtime="20200420 13:10:30.730" starttime="20200420 13:10:23.902"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200420 13:10:34.870" starttime="20200420 13:10:30.730"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="root"]/div/div[1]/ul/li[2]/a</arg>
+</arguments>
+<msg timestamp="20200420 13:10:34.870" level="INFO">Clicking link 'xpath://*[@id="root"]/div/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20200420 13:10:35.071" starttime="20200420 13:10:34.870"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="root"]/div/div[2]/p[1]/a</arg>
+</arguments>
+<msg timestamp="20200420 13:10:35.074" level="INFO">Clicking link 'xpath://*[@id="root"]/div/div[2]/p[1]/a'.</msg>
+<status status="PASS" endtime="20200420 13:10:35.244" starttime="20200420 13:10:35.073"></status>
+</kw>
+<status status="PASS" endtime="20200420 13:10:35.245" starttime="20200420 13:10:23.901"></status>
+</kw>
+<kw name="Send email to reset Password">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="root"]/div/div[2]/form/input</arg>
+<arg>yogananda560@sasi.ac.in</arg>
+</arguments>
+<msg timestamp="20200420 13:10:35.247" level="INFO">Typing text 'yogananda560@sasi.ac.in' into text field 'xpath://*[@id="root"]/div/div[2]/form/input'.</msg>
+<status status="PASS" endtime="20200420 13:10:35.726" starttime="20200420 13:10:35.247"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="root"]/div/div[2]/form/button</arg>
+</arguments>
+<msg timestamp="20200420 13:10:35.727" level="INFO">Clicking button 'xpath://*[@id="root"]/div/div[2]/form/button'.</msg>
+<status status="PASS" endtime="20200420 13:10:35.891" starttime="20200420 13:10:35.726"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200420 13:10:38.892" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20200420 13:10:38.892" starttime="20200420 13:10:35.891"></status>
+</kw>
+<status status="PASS" endtime="20200420 13:10:38.892" starttime="20200420 13:10:35.246"></status>
+</kw>
+<kw name="Close Website">
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" endtime="20200420 13:10:39.122" starttime="20200420 13:10:38.894"></status>
+</kw>
+<status status="PASS" endtime="20200420 13:10:39.122" starttime="20200420 13:10:38.893"></status>
+</kw>
+<status status="PASS" endtime="20200420 13:10:39.125" critical="yes" starttime="20200420 13:10:23.899"></status>
+</test>
+<doc>Register TestCases</doc>
+<status status="PASS" endtime="20200420 13:10:39.130" starttime="20200420 13:10:23.520"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="ForgotPassword TestCase" pass="1">ForgotPassword TestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
